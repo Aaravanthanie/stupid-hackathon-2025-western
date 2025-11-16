@@ -21,7 +21,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 export default function LoginPage() {
   const router = useRouter()
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('supersecret123')
+  const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(true)
   const [forgotPasswordClicked, setForgotPasswordClicked] = useState(false)
   const [securityQuestion, setSecurityQuestion] = useState('')
@@ -148,7 +148,7 @@ export default function LoginPage() {
             {forgotPasswordClicked && (
               <Alert>
                 <AlertDescription className="text-center">
-                  Here's your password: <span className="font-mono font-bold">{password}</span> 💅
+                  Here's your password: <span className="font-mono font-bold">{"supersecret123"}</span> 💅
                 </AlertDescription>
               </Alert>
             )}

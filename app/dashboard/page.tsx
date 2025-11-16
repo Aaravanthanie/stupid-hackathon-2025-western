@@ -122,13 +122,13 @@ export default function DashboardPage() {
           </Alert>
         )}
 
-        {/* Creepy Data Panel */}
+        {/* Data Panel */}
         {showDataPanel && (
           <Card className="border-destructive">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5" />
-                Creepily Honest Data Panel
+                Data Panel
               </CardTitle>
               <CardDescription>We track everything. You're welcome.</CardDescription>
             </CardHeader>

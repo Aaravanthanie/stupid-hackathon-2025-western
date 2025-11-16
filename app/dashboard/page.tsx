@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Label } from '@/components/ui/label'
 import { Alert, AlertDescription } from '@/components/ui/alert'
-import { Lock, Terminal, AlertTriangle, Download } from 'lucide-react'
+import { Lock, Terminal, AlertTriangle, Download, QrCode } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -16,6 +16,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 import Image from 'next/image'
+import myQrCode from './qrcode.png';
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -249,7 +250,7 @@ export default function DashboardPage() {
             <CardContent className="pt-6 text-center">
               <div className="w-64 h-64 mx-auto bg-white rounded-lg p-4 flex items-center justify-center">
                 <Image
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://insecure-by-design.vercel.app/compromised"
+                  src={myQrCode}
                   alt="Ultimate Access QR Code"
                   width={256}
                   height={256}
